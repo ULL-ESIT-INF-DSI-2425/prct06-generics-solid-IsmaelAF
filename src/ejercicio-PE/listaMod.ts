@@ -2,6 +2,11 @@ export class listaMod<T> {
 
     constructor(public elementos: T[]) {}
 
+    /**
+     * Añade al final de la lista los elementos de la segunda
+     * @param l2 - segunda lista
+     * @returns - lista
+     */
     append(l2: T[]): T[] {
         let resultado: T[] = [];
         let posicion: number = 0;
@@ -18,6 +23,11 @@ export class listaMod<T> {
         return resultado;
     }
 
+    /**
+     * Combina los elementos en una lista
+     * @param listas - numero variables de listas
+     * @returns - lista
+     */
     concatenate(...listas: T[][]): T[] {
         let resultado: T[] = this.elementos;
         let posicion: number = this.elementos.length;
@@ -34,6 +44,11 @@ export class listaMod<T> {
         return resultado;
     }
 
+    /**
+     * Dada una lista y un predicado lógico, devuelve una lista de los elementos verdaderos
+     * @param predicado - predicado lógico a cumplir
+     * @returns - lista 
+     */
     filter(predicado: (item: T) => boolean): T[] {
         let resultado: T[] = [];
 
@@ -48,6 +63,10 @@ export class listaMod<T> {
         return resultado;
     }
 
+    /**
+     * Número de elementos de la lista
+     * @returns - number
+     */
     length(): number {
         let resultado: number = 0;
 
@@ -58,6 +77,12 @@ export class listaMod<T> {
         return resultado;
     }
 
+    /**
+     * Dada una lista y función, retorna la lista resultado de aplicar la función
+     * en todos los elementos de la lista.
+     * @param func - función que se aplicará a cada elemento
+     * @returns - lista
+     */
     map(func: (item: T) => T): T[] {
         let resultado: T[] = [];
 
@@ -69,17 +94,28 @@ export class listaMod<T> {
         return resultado;
     }
 
-    /*reduce(): T[] {
+    /**
+     * Dada una lista y una función, además de un valor inicial, reduce cada
+     * elemento de la lista teniendo en cuenta el acumulador y la funcion.
+     * @param accum - valor inicial
+     * @param func - funcion
+     * @returns - lista
+     */
+    reduce(accum: T,func:(accum: T, item: T) => T): T[] {
         let resultado: T[] = [];
 
         for (let i = 0; i < this.elementos.length; i++) {
-            resultado[i] = ;
+            resultado[i] = func(accum, this.elementos[i]);
         }
 
         return resultado;
-    }*/
+    }
 
-    /*reverse(): T[] {
+    /**
+     * Devuelve una lista con los elementos originales pero en orden inverso.
+     * @returns - lista
+     */
+    reverse(): T[] {
         let resultado: T[] = [];
         let posicion: number = 0;
 
@@ -88,15 +124,17 @@ export class listaMod<T> {
         }
 
         return resultado;
+    }
+
+    /*foreach(func: (elemento: T, posicion: number) => void): T[] {
+        let resultado: T[] = [];
+
+        for (let i = 0; i< this.elementos.length; i++) {
+           
+        }
+
+        return resultado;
     }*/
 
 
 }
-/*
-let lista1 = [1,2,3,4];
-let lista2 = ["rojo", "verde"];
-let lista3 = [5,6,7];
-
-let mod = new listaMod;
-
-mod.concatenate(lista1, lista2, lista3);*/
