@@ -1,4 +1,4 @@
-import {IntfFile} from "./FileStorage"
+import {IntfFile} from "./FileStorage.js"
 
 export class DataManager {
     constructor(private file: IntfFile) {}

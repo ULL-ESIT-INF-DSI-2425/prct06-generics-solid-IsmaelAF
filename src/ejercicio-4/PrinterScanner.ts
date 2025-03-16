@@ -1,5 +1,5 @@
-import { Printable } from "./IntfPrinter";
-import { Scannable } from "./IntfScanner";
+import { Printable } from "./IntfPrinter.js";
+import { Scannable } from "./IntfScanner.js";
 
 export class PrinterScanner implements Printable, Scannable {
     /**

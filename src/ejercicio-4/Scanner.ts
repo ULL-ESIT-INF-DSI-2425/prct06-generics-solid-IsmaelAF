@@ -1,4 +1,4 @@
-import { Scannable } from "./IntfScanner";
+import { Scannable } from "./IntfScanner.js";
 
 export class Scanner implements Scannable {
     /**

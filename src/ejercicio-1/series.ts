@@ -1,5 +1,5 @@
-import { basicStreamableCollection } from "./basicStreamableCollection";
-import { info } from "./streamable";
+import { basicStreamableCollection } from "./basicStreamableCollection.js";
+import { info } from "./streamable.js";
 
 export class series extends basicStreamableCollection<info> {
     /**

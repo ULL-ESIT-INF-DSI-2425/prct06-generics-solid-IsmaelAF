@@ -1,5 +1,5 @@
-import { Disco } from "./disco";
-import {single} from "./single"
+import { Disco } from "./disco.js";
+import {single} from "./single.js"
 
 /**
  * Interfaz para la clase Artista

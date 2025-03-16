@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { DataManager } from "./DataManager";
+import { DataManager } from "./DataManager.js";
 
 export interface IntfFile {
     read(): string;
@@ -27,12 +27,12 @@ export class FileStorage implements IntfFile {
    * @param data - contenido con el que se modificará. 
    */
   public write(data: string): void {
-    try {
+    //try {
       fs.writeFileSync(this.filePath, data, "utf-8");
       console.log("Archivo escrito exitosamente.");
-    } catch (error) {
-      console.error("Error al escribir en el archivo");
-    }
+    //} catch (error) {
+    //  console.error("Error al escribir en el archivo");
+    //}
   }
 }
 

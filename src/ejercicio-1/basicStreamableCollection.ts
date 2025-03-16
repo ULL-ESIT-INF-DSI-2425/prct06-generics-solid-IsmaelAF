@@ -1,6 +1,6 @@
-import { streamable } from "./streamable";
-import { searchByName } from "./streamable";
-import { searchByYear } from "./streamable";
+import { streamable } from "./streamable.js";
+import { searchByName } from "./streamable.js";
+import { searchByYear } from "./streamable.js";
 
 
 export abstract class basicStreamableCollection<T> implements streamable<T>, searchByName<T>, searchByYear<T> {

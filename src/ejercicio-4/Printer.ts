@@ -1,4 +1,4 @@
-import { Printable } from "./IntfPrinter";
+import { Printable } from "./IntfPrinter.js";
 
 export class Printer implements Printable {
     /**

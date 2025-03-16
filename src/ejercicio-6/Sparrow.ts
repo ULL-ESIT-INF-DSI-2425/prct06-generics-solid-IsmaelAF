@@ -1,5 +1,5 @@
-import { Bird } from "./Bird";
-import { IntfFly } from "./IntfFly";
+import { Bird } from "./Bird.js";
+import { IntfFly } from "./IntfFly.js";
 
 export class Sparrow extends Bird implements IntfFly {
     /**

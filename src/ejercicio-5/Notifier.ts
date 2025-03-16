@@ -1,4 +1,4 @@
-import { TipoNotificacion } from "./IntfTipoNotificacion";
+import { TipoNotificacion } from "./IntfTipoNotificacion.js";
 
 export class Notifier {
     constructor(private notificationService: TipoNotificacion) {

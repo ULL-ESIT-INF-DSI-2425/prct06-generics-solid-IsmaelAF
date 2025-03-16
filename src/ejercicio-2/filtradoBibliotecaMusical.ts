@@ -1,5 +1,5 @@
-import { Artista } from "./artista";
-import { BibliotecaMusical } from "./bibliotecaMusical";
+import { Artista } from "./artista.js";
+import { BibliotecaMusical } from "./bibliotecaMusical.js";
 
 export class filtradoBibliotecaMusical {
     constructor(private biblioteca: BibliotecaMusical) {}

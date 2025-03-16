@@ -1,7 +1,7 @@
-import { Artista } from "./artista";
-import { Cancion } from "./cancion";
-import { Disco } from "./disco";
-import {single} from "./single"
+import { Artista } from "./artista.js";
+import { Cancion } from "./cancion.js";
+import { Disco } from "./disco.js";
+import {single} from "./single.js"
 
 
 export class BibliotecaMusical {
